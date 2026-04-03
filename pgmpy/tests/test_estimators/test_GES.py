@@ -156,7 +156,7 @@ def test_cancer_model():
 
 def test_child_model():
     cancer_model = load_model("bnlearn/child")
-    data = cancer_model.simulate(3000, seed=0)
+    data = cancer_model.simulate(5000, seed=0)
 
     est = GES(data)
     dag = est.estimate()
